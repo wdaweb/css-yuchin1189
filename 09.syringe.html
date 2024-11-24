@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syringe</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .head {
+            width: 300px;
+            height: 100px;
+            background-image: linear-gradient(white 10%, lightgray 50%, white 100%);
+            border: 0.5px solid #333;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+        }
+
+        .head::before {
+            content: "";
+            width: 55px;
+            height: 55px;
+            background-image: linear-gradient(white 10%, lightgray 50%, white 100%);
+            border: 0.5px solid #333;
+            position: absolute;
+            top: 50%;
+            translate: 0 -50%;
+            right: 299px;
+        }
+
+        .head::after {
+            content: "";
+            width: 55px;
+            height: 55px;
+            background-image: linear-gradient(white 10%, lightgray 50%, white 100%);
+            border: 0.5px solid #333;
+            border-radius: 0 5px 5px 0;
+            position: absolute;
+            top: 50%;
+            translate: 0 -50%;
+            left: 299.5px;
+        }
+
+        .eyes::before {
+            content: "";
+            width: 15px;
+            height: 75px;
+            background-image: linear-gradient(white 10%, lightgray 50%, white 100%);
+            border: 0.5px solid #333;
+            border-radius: 16%;
+            position: absolute;
+            top: 50%;
+            translate: 0 -50%;
+            right: 352px;
+        }
+
+        .eyes::after {
+            content: "";
+            width: 60px;
+            height: 1px;
+            border: 0.5px solid #333;
+            position: absolute;
+            top: 50%;
+            translate: 0 -50%;
+            left: 351px;
+        }
+
+        .mouth {
+            height: 100px;
+            width: 30px;
+            background: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+        }
+
+        .mouth::after {
+            content: "";
+            width: 136px;
+            height: 100px;
+            border: 0.5px solid #333;
+            position: absolute;
+            top: 50%;
+            translate: 0 -50%;
+            left: 29px;
+            background: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="eyes"></div>
+        <div class="cheaks"></div>
+        <div class="mouth"></div>
+        <div class="chest"></div>
+    </div>
+</body>
+
+</html>
